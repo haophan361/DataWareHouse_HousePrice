@@ -1,0 +1,200 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="ab602477-7e14-4331-8cc9-fb86555c6de0" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>DimGarage</ID>
+  <Name>DimGarage</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="b6e8ce5f-107d-4136-87d9-6a35fe691b79">
+    <DataSourceViewID>Real Estate DW</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="0f453765-ebb2-40d9-86d7-b7c6739cfd3e">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="02bc2328-24d3-4662-a060-a5ad4a42abb9">
+      <ID>Garage Id</ID>
+      <Name>Garage Id</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8b736827-c488-4b35-9244-4b0c37fca924">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="06b25a34-cff8-4031-a68c-9e07bccb0bac">
+            <TableID>dbo_Dim_Garage</TableID>
+            <ColumnID>GarageId</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="e6c4d1ed-230e-40e3-a11d-2201fe0f7bb4">
+          <AttributeID>ID</AttributeID>
+          <Name>ID_</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2b3c473a-e7fc-4038-8e15-0256b5a6eb36">
+          <AttributeID>Garage Type</AttributeID>
+          <Name>Garage Type</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="bcece815-7b32-42fb-b1ea-2f121bd6ccdb">
+          <AttributeID>Garage Finish</AttributeID>
+          <Name>Garage Finish</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e765fce3-862d-4495-8260-c5051a5748d3">
+          <AttributeID>Garage Yr Blt</AttributeID>
+          <Name>Garage Yr Blt</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="39687f53-ebdf-4c55-b699-7e4e019f8c45">
+          <AttributeID>Garage Qual</AttributeID>
+          <Name>Garage Qual</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="52f7a862-2725-4396-aff4-efb415c15bbe">
+          <AttributeID>Garage Cond</AttributeID>
+          <Name>Garage Cond</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="14a1032b-f901-492c-b26c-f7dc8a8e89b5">
+      <ID>ID</ID>
+      <Name>ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="96bc971b-2da7-42a2-80cc-151456a0febc">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ddff2692-6e07-46fb-9f08-057a61548961">
+            <TableID>dbo_Dim_Garage</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3c95bbdf-f343-4bf7-a8fe-47c3fd151fd9">
+      <ID>Garage Type</ID>
+      <Name>Garage Type</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="64994990-5b4f-486d-af6d-6a1330d6d797">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7a0d167e-e65f-4571-a4c8-d08cbdc1d780">
+            <TableID>dbo_Dim_Garage</TableID>
+            <ColumnID>GarageType</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8c180b2c-3fcd-4cd7-af20-1bd3c4646bf4">
+      <ID>Garage Finish</ID>
+      <Name>Garage Finish</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="48d2affb-3d96-43b3-9542-e14b4a18cc59">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="95f90ae0-d336-4516-b578-27489ed6d039">
+            <TableID>dbo_Dim_Garage</TableID>
+            <ColumnID>GarageFinish</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8ed09a46-ea87-40a1-949b-17d2299252f5">
+      <ID>Garage Yr Blt</ID>
+      <Name>Garage Yr Blt</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1fdbc754-a750-4f91-84ee-da9e702e96ac">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b64e75f7-9db8-4b1c-a88d-673abf8ed4ed">
+            <TableID>dbo_Dim_Garage</TableID>
+            <ColumnID>GarageYrBlt</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f145e831-e9e9-4324-b1c9-d6b71cfafa67">
+      <ID>Garage Qual</ID>
+      <Name>Garage Qual</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9481b4e0-8b24-4aa0-8e3c-e5ab6d7a58de">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cab0220a-f943-4b1e-9454-a4eb84db336d">
+            <TableID>dbo_Dim_Garage</TableID>
+            <ColumnID>GarageQual</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8d07757e-f109-4603-bcfb-82f5145db22e">
+      <ID>Garage Cond</ID>
+      <Name>Garage Cond</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8430ee57-b3ab-4bb9-8802-abd7dd82ac69">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8718e937-4543-48c8-8fb2-bd12fc7e9c5c">
+            <TableID>dbo_Dim_Garage</TableID>
+            <ColumnID>GarageCond</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

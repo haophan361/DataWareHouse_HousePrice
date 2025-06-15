@@ -1,0 +1,156 @@
+﻿<ConfigurationSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Database>
+    <DataSources>
+      <DataSource>
+        <ID>RealEstateDW</ID>
+        <ConnectionString>Provider=SQLOLEDB.1;Data Source=localhost;Persist Security Info=True;Password=;User ID=;Initial Catalog=RealEstateDW</ConnectionString>
+        <ImpersonationInfo>
+          <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Default</ImpersonationMode>
+          <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>
+        </ImpersonationInfo>
+      </DataSource>
+    </DataSources>
+    <Dimensions>
+      <Dimension>
+        <ID>Dim Basement</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DimBsmtFinType</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DimCondition</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DimDate</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DimElectrical</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DimExterior</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DimGarage</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DimHouseStyle</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DimLandContour</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DimLocation</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DimLot</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DimMSSubClass</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DimMSZoning</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DimNeighborhood</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DimProperty</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim SaleCondition</ID>
+      </Dimension>
+    </Dimensions>
+    <Cubes>
+      <Cube>
+        <ID>FactBasement</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fact Basement</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Basement</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>FactFloorArea</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fact Floor Area</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Floor Area</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>FactGarage</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fact Garage</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Garage</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>FactSale</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fact Sale</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Sale</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>RealEstateDW</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fact Sale</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Sale</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Fact Floor Area</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Floor Area</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>RealEstateDW 1</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fact Room Area</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Room Area</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+    </Cubes>
+    <DataSourceImpersonationInfo>
+      <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Default</ImpersonationMode>
+      <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>
+    </DataSourceImpersonationInfo>
+  </Database>
+</ConfigurationSettings>

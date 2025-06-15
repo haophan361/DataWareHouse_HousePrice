@@ -1,0 +1,356 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="e4ff17d3-bd50-4265-9d30-4031a4d17229" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>FactGarage</ID>
+  <Name>FactGarage</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="2e8c93cf-3b9d-4667-9417-6d3a10df07fc">
+      <ID>DimGarage</ID>
+      <Name>DimGarage</Name>
+      <DimensionID>DimGarage</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="ef893bb2-1ca0-4fe8-9a7a-d64924134058">
+          <AttributeID>Garage Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="54c99815-87a9-4030-b18f-b91de7bd6ad4">
+          <AttributeID>ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8fa7f856-0b29-48d1-ae82-3ddc62b72854">
+          <AttributeID>Garage Type</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2ab6c4b0-eeb0-4a02-a038-fd47649adc79">
+          <AttributeID>Garage Finish</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="20e9da07-242d-484a-89b1-29fb74e69d49">
+          <AttributeID>Garage Yr Blt</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6bee3527-38fd-49dc-abd7-5386cdc8d08a">
+          <AttributeID>Garage Qual</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c0ba54fc-471e-468f-aafd-0778e19f7bef">
+          <AttributeID>Garage Cond</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="43c4c1c0-ce93-4ba8-9d42-4e1b6c2edeee">
+      <ID>DimProperty</ID>
+      <Name>DimProperty</Name>
+      <DimensionID>DimProperty</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="7e885b00-a5e7-47d6-b661-9b9c9c234fad">
+          <AttributeID>Property Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="98b29dca-969c-4bc5-9249-9bbe3b5925ea">
+          <AttributeID>ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="fd883c9a-433e-4dda-b570-b5a98983b271">
+          <AttributeID>Foundation</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="36aca709-5763-4400-8e2d-53ab959aa157">
+          <AttributeID>Bldg Type</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e4b12527-6547-4fb5-a16d-1a6dbd2acb54">
+          <AttributeID>Year Built</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f685dd36-f4e7-4a0b-a57d-f6f466f1bc90">
+          <AttributeID>Year Remod Add</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="eeb4a429-a0aa-480b-99d4-9f042d302d13">
+          <AttributeID>Overall Qual</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="589e5989-a95c-4723-b657-26521fe215c1">
+          <AttributeID>Overall Cond</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="137d6c0d-c97d-4200-8eb4-9706747e56fc">
+          <AttributeID>Tot Rms Abv Grd</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="77cadc23-ef45-4f06-9438-8783c17e6600">
+          <AttributeID>Bedroom Abv Gr</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ec13ad42-37e8-4365-812c-fb50a8c8b698">
+          <AttributeID>Kitchen Abv Gr</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4973fde5-b14d-434d-ad06-82ad42f00531">
+          <AttributeID>Kitchen Qual</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="11a404fa-23bf-446f-949a-3c53d5e43806">
+          <AttributeID>Fireplaces</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4954a2a3-cb4c-4b93-9c2c-457a758064d9">
+          <AttributeID>Fire Place Qu</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="257a1411-3148-4fb0-a323-ea308133da06">
+          <AttributeID>Heating</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7cde23e6-b8f0-41ae-8665-dc1755a9cae9">
+          <AttributeID>Heating QC</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e2de0b6d-eda8-4cad-963d-5bc77bd877c6">
+          <AttributeID>Central Air</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="21e2eba4-c00b-4056-99c4-cd7ea91aef31">
+          <AttributeID>Pool Area</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4538cabf-c543-433b-b1be-80f3a10931f2">
+          <AttributeID>Functional</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9a12d3ec-8de3-46f6-acf0-c19798e6b0a7">
+          <AttributeID>Full Bath</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a720257e-8acf-4c10-8324-d79e8006a12f">
+          <AttributeID>Half Bath</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d294134b-f0d2-4c09-bb68-1593dd0e4dc1">
+          <AttributeID>MS Sub Class ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f800cc9c-2d9e-4495-8310-3f8b93c0b13d">
+          <AttributeID>MS Sub Class</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="075d9c91-2557-4056-a544-7147291fa30d">
+          <AttributeID>Electrical ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6f10df8c-3b2c-41fa-a2fa-1e7edc555f65">
+          <AttributeID>Electrical</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cc4bf2a4-5c16-43df-84da-6343850a7ce7">
+          <AttributeID>House Style ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6ae29f4a-a360-4337-b012-a263d70accb1">
+          <AttributeID>House Style</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="e6d98262-5887-4789-a49e-c2bfd7810a6b">
+      <ID>DimLocation</ID>
+      <Name>DimLocation</Name>
+      <DimensionID>DimLocation</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="39f7ca72-28fa-4369-a3a1-ee184f4d0dd2">
+          <AttributeID>Location Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="680bfd25-833a-4964-ad46-edd2392ddcc0">
+          <AttributeID>ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="035785f0-e9a1-4208-a53d-44b6b31467cb">
+          <AttributeID>Condition ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="501505e5-6d48-48c5-8444-26a512bb8807">
+          <AttributeID>Condition</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1daebe37-331d-4e90-b282-9ae9f11d2e04">
+          <AttributeID>Neighborhood ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="80fd009c-4593-42df-bb5c-be7a818864df">
+          <AttributeID>Neighborhood</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0dfd2dfa-4ec2-4097-b32e-3106a30ba3fd">
+          <AttributeID>MS Zoning ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c40d4579-d59c-4a45-88a1-1b32c46c41c7">
+          <AttributeID>MS Zoning</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="5720906f-ea6b-4965-b2e5-24b622af26ec">
+      <ID>DimDate</ID>
+      <Name>DimDate</Name>
+      <DimensionID>DimDate</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="bd7f4098-43e0-4f90-9106-5585af978a5a">
+          <AttributeID>Date Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b1d328b3-c255-47ee-b497-14000183fc10">
+          <AttributeID>ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4ede7c25-6f58-48ff-8804-17e274b9ad00">
+          <AttributeID>Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c419f824-448e-4f01-b237-17d82062553b">
+          <AttributeID>Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="fa6fe5fe-82b1-4b11-bcab-861d72e1bbfa">
+          <AttributeID>Quarter</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="b4deaf2d-a325-4f33-ae09-d70edbb94e29">
+      <ID>Fact Garage</ID>
+      <Name>Fact Garage</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="06f21a61-7e5b-4086-a841-f49c0f0fff9c">
+          <ID>Garage Cars</ID>
+          <Name>Garage Cars</Name>
+          <Source dwd:design-time-name="7d3cddf2-e316-481e-ba07-e936ec08cad2">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="9704e5a6-5800-48cc-b638-f44ad2463044">
+              <TableID>dbo_Fact_Garage</TableID>
+              <ColumnID>GarageCars</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="9c7e14e8-75d0-427e-8f43-20ae1399a9e5">
+          <ID>Garage Area</ID>
+          <Name>Garage Area</Name>
+          <Source dwd:design-time-name="ebc2d6e3-01fc-4315-b27a-fb5cd20bc2e6">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="96948ac3-c8ba-4502-8e68-a8ae79fa68dc">
+              <TableID>dbo_Fact_Garage</TableID>
+              <ColumnID>GarageArea</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="69c7d783-35bb-49c6-b70c-0e41c0f65d85">
+          <ID>Garage Qual</ID>
+          <Name>Garage Qual</Name>
+          <Source dwd:design-time-name="91b33ef7-65b2-4826-b693-a1b250a07b25">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="397cf955-22b2-45cd-968a-78f0fbf4be13">
+              <TableID>dbo_Fact_Garage</TableID>
+              <ColumnID>GarageQual</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="e26ed2f2-c15e-4e90-b761-33afbf552ecc">
+          <ID>Garage Cond</ID>
+          <Name>Garage Cond</Name>
+          <Source dwd:design-time-name="c98969fe-3ff7-40d6-854a-5d1f17a169e2">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="27d1e704-8603-4e37-bd3d-23ebb2b5bea1">
+              <TableID>dbo_Fact_Garage</TableID>
+              <ColumnID>GarageCond</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="4564e96b-b2f0-4b99-9975-e9d27272d226">
+          <CubeDimensionID>DimGarage</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="8ccb73b8-805c-408a-bded-6171d089319f">
+              <AttributeID>Garage Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="ea013c46-577f-427a-aa36-118443eb539a">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a3640b1c-9888-4cdd-bdfb-c946eaae7840">
+                    <TableID>dbo_Fact_Garage</TableID>
+                    <ColumnID>GarageId</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="079f507c-699a-4cf6-85dd-1b4f95ba9821">
+          <CubeDimensionID>DimProperty</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="9ff2e278-a6c8-4fd4-9a2a-e1bc50056acc">
+              <AttributeID>Property Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="96a7fefe-0a00-4795-9c38-1b79de7dc3ea">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="86f03e65-0f4b-4b53-b5bb-c63210eac72a">
+                    <TableID>dbo_Fact_Garage</TableID>
+                    <ColumnID>PropertyId</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="9860c98b-ec95-452e-aa68-1d4d2d05a7f6">
+          <CubeDimensionID>DimLocation</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="18c0b332-6585-40b8-add1-ba502d6925a4">
+              <AttributeID>Location Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="6c2d26b7-d75d-4f21-91b1-daf603b1cae7">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="34086b27-3dc8-4227-aeb9-1416f445d38f">
+                    <TableID>dbo_Fact_Garage</TableID>
+                    <ColumnID>LocationId</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="eae71d5d-f8d4-4d59-b4ca-00e8e95dc0f5">
+          <CubeDimensionID>DimDate</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b92970e6-7646-4a58-9067-c998cbe27d22">
+              <AttributeID>Date Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="dfc62db2-7e33-484c-b578-4e3ea6e4fd69">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f514a44b-c793-4ecf-a7bd-c11dc4301e71">
+                    <TableID>dbo_Fact_Garage</TableID>
+                    <ColumnID>DateKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="35d57f21-bddb-4c55-a5a0-39b1f5bad0fb">
+    <DataSourceViewID>Real Estate DW</DataSourceViewID>
+  </Source>
+</Cube>

@@ -1,0 +1,356 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="979ce888-a38c-4428-b823-fc58c2d05f48" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>FactBasement</ID>
+  <Name>FactBasement</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="c2b26096-3fbc-408d-bfa8-1872c1647709">
+      <ID>DimDate</ID>
+      <Name>DimDate</Name>
+      <DimensionID>DimDate</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="d1c04938-f9cb-4651-bdc8-a3bed8dd22d9">
+          <AttributeID>Date Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="41c8b7db-ef25-44a2-b144-680d3e355a36">
+          <AttributeID>ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e5358cb5-de0c-42ce-99c0-f626b2357e0b">
+          <AttributeID>Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a049d1ca-a603-490c-813d-c11333755b77">
+          <AttributeID>Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9acc80a4-68ae-480a-92aa-83df543aa5f2">
+          <AttributeID>Quarter</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="733c6db0-30c7-4f13-bad5-282bf5deb681">
+      <ID>DimProperty</ID>
+      <Name>DimProperty</Name>
+      <DimensionID>DimProperty</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="25f1a5ba-6058-4b1d-904e-3945f8b41758">
+          <AttributeID>Property Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1cfff97a-612f-4823-99f2-8dc0f99df1be">
+          <AttributeID>ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="fabbfc89-6940-421e-ba15-8f07fcdbb0d8">
+          <AttributeID>Foundation</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e20b1fa1-6449-4158-8472-a7917fdb5888">
+          <AttributeID>Bldg Type</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2dacb314-eeaf-41c3-90b1-fb1c0fdba326">
+          <AttributeID>Year Built</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="22a9ce76-a49b-4150-a988-9ab5a158f6ce">
+          <AttributeID>Year Remod Add</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4eafdadd-4a2b-480c-9297-3964132082dc">
+          <AttributeID>Overall Qual</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="92721c99-d5cb-47dd-8523-a6933829f540">
+          <AttributeID>Overall Cond</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="94a166f5-2d1d-4244-b302-2434c41c73c8">
+          <AttributeID>Tot Rms Abv Grd</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="49287f18-6137-4ab8-813c-5d43fc8756be">
+          <AttributeID>Bedroom Abv Gr</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="459b520d-d3ce-4845-b59a-c1907674d606">
+          <AttributeID>Kitchen Abv Gr</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f144d2ae-38e8-4b27-9881-717842f10dd0">
+          <AttributeID>Kitchen Qual</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="44bf4f76-0633-423f-bd66-45311784a85d">
+          <AttributeID>Fireplaces</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="88717341-da55-45e2-a0e9-90f1e32cdf82">
+          <AttributeID>Fire Place Qu</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3c8f1f27-7297-441b-aac4-7bb7c33b4d91">
+          <AttributeID>Heating</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3e77e019-2d80-43a6-b383-be79476c6399">
+          <AttributeID>Heating QC</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="163b4436-a4e4-4bbb-82c9-06473d9b0a6f">
+          <AttributeID>Central Air</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b8b17609-2d7b-4051-ab0d-9327bd5928ae">
+          <AttributeID>Pool Area</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f1e64cdd-7fd2-484c-a93b-6514106173cf">
+          <AttributeID>Functional</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0d9e1291-5dff-4ab0-b466-015085af0f63">
+          <AttributeID>Full Bath</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c8e39672-6b97-4961-a70d-d228f54f1d28">
+          <AttributeID>Half Bath</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="52af29fb-d1ee-461f-9304-6269c3b95b59">
+          <AttributeID>MS Sub Class ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2bc137ae-9647-4141-9362-dd8b8e0be4f1">
+          <AttributeID>MS Sub Class</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a2d66f95-cf77-4154-acac-a209813f5154">
+          <AttributeID>Electrical ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="862806cc-f83e-4bde-84a2-14f89dd8cbbd">
+          <AttributeID>Electrical</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2bd45d7b-2167-46a1-9bed-974bddbb5459">
+          <AttributeID>House Style ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="bf267e2b-f578-48bb-992e-ca5b8904bee9">
+          <AttributeID>House Style</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="15b88fb1-4d13-40ed-b5d4-ad39cf1efa21">
+      <ID>DimLocation</ID>
+      <Name>DimLocation</Name>
+      <DimensionID>DimLocation</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="dde4a539-4c43-4f2d-ad13-614ffe1f02c7">
+          <AttributeID>Location Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e119b203-82c8-4694-baac-b6612d1293b0">
+          <AttributeID>ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="42f43f10-4f3e-4305-9e33-1f5328a0a6f6">
+          <AttributeID>Condition ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2e5feeb9-ae32-4a92-9352-3bc613bc045a">
+          <AttributeID>Condition</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="bdfe79fe-f9a1-4b91-a57d-5712795c33d7">
+          <AttributeID>Neighborhood ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="55e92685-1324-41ce-816d-374e01cb1999">
+          <AttributeID>Neighborhood</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4e20db39-9506-40cd-baf2-f2adc59d4cb8">
+          <AttributeID>MS Zoning ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="55d522d0-b38d-425c-a4b6-ab9cf6fcbc43">
+          <AttributeID>MS Zoning</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="bc7d56f3-ccf8-42d8-bf1d-2103ef1ef6e4">
+      <ID>DimBasement</ID>
+      <Name>DimBasement</Name>
+      <DimensionID>Dim Basement</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="bcf443be-d079-48e5-aafe-645739bca9d6">
+          <AttributeID>Basement Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e0367252-b524-4a0d-a84f-45d1f33e8ecd">
+          <AttributeID>ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="89033b05-d8b5-480c-ad69-3b7a90910075">
+          <AttributeID>Bsmt Qual</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5eb1d987-e273-4cef-9a19-0306d2f0007a">
+          <AttributeID>Bsmt Cond</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5dc43c87-557a-43d6-89d7-310787f95649">
+          <AttributeID>Bsmt Exposure</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1b994036-99c7-41bd-a3ee-cbf57b953575">
+          <AttributeID>Bsmt Fin Type ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2695cfcb-7eeb-46e7-b520-ff5082efb3a5">
+          <AttributeID>Bsmt Fin Type</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="9745ee9c-353a-410a-b855-01211d2557cd">
+      <ID>Fact Basement</ID>
+      <Name>Fact Basement</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="5d2886a8-17ea-48d8-8db4-3cf08aa4f32c">
+          <ID>Total Bsmt SF</ID>
+          <Name>Total Bsmt SF</Name>
+          <Source dwd:design-time-name="01a7cd44-231b-41f0-ad09-04464a1cae12">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="fe009a62-fe23-47b8-aa9b-d2ccf14a57e4">
+              <TableID>dbo_Fact_Basement</TableID>
+              <ColumnID>TotalBsmtSF</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="4daec546-2bdd-4dba-9a22-314efd96b0dc">
+          <ID>Bsmt Fin SF1</ID>
+          <Name>Bsmt Fin SF1</Name>
+          <Source dwd:design-time-name="0eea46db-2d36-4bc7-a32d-531026c793a2">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="2ee87d64-2ba6-4848-ac0a-9b293b164a14">
+              <TableID>dbo_Fact_Basement</TableID>
+              <ColumnID>BsmtFinSF1</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="104a08c6-a5c3-4047-8c81-ec1faf4b688a">
+          <ID>Bsmt Fin SF2</ID>
+          <Name>Bsmt Fin SF2</Name>
+          <Source dwd:design-time-name="9b6e051c-c78e-4e39-8372-fc7603e44a7e">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="4fe085c4-ce46-42b8-8443-faa12bf4eee9">
+              <TableID>dbo_Fact_Basement</TableID>
+              <ColumnID>BsmtFinSF2</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="73f2ee62-0fca-46fd-9753-4bfa8656ac0e">
+          <ID>Bsmt Unf SF</ID>
+          <Name>Bsmt Unf SF</Name>
+          <Source dwd:design-time-name="56ed75b6-f675-4f03-a5c3-34a2d5cff25c">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="13e608b9-68a3-4847-888b-cd9f73034e9b">
+              <TableID>dbo_Fact_Basement</TableID>
+              <ColumnID>BsmtUnfSF</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="2f5ef7b7-be86-4dfc-8fdf-94dfb334e74e">
+          <CubeDimensionID>DimDate</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e75d761b-5238-4bd7-b51c-4a0115d012be">
+              <AttributeID>Date Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="2903577b-46e2-4b8e-bc81-d53d044afeff">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0e70760a-ce98-49f4-9222-d5c2421112e0">
+                    <TableID>dbo_Fact_Basement</TableID>
+                    <ColumnID>DateKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="6f5bbe83-77ee-48b7-a82a-203519cab925">
+          <CubeDimensionID>DimProperty</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e760c8d8-977e-483b-b694-f34bbd440b4d">
+              <AttributeID>Property Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="945fb292-8731-4136-937d-06816399df57">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="952b7430-14bb-4ab3-beac-e7e9c2aba785">
+                    <TableID>dbo_Fact_Basement</TableID>
+                    <ColumnID>PropertyId</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e2799c83-b17b-4d56-8377-617906976557">
+          <CubeDimensionID>DimLocation</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d8550c79-0538-45bb-8d2b-ec72bff7356b">
+              <AttributeID>Location Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="6e7c8c6a-595d-47eb-b676-a273f8e296b0">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4d78e465-3540-46f4-b831-231dcdbfe65a">
+                    <TableID>dbo_Fact_Basement</TableID>
+                    <ColumnID>LocationId</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="78e28335-3656-40d7-8325-6c8081c7e51f">
+          <CubeDimensionID>DimBasement</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="9b9fdf3c-03f6-40d1-b5d5-16af42f57529">
+              <AttributeID>Basement Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="d76a30d3-6c1c-42bf-973f-1a4219b67272">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="30342c76-a8e3-4814-9674-3e84cd1a38f8">
+                    <TableID>dbo_Fact_Basement</TableID>
+                    <ColumnID>BasementId</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="676578e3-2896-45c6-bf27-92be236d1c71">
+    <DataSourceViewID>Real Estate DW</DataSourceViewID>
+  </Source>
+</Cube>

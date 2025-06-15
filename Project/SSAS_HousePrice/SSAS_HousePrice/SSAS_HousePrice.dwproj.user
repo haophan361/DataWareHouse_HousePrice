@@ -1,0 +1,37 @@
+<AnalysisServicesUserConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Configurations>
+    <Configuration>
+      <Name>Development</Name>
+      <Options>
+        <UserIDs>
+          <ConfigurationSetting>
+            <Id>Real Estate DW</Id>
+            <Name>Real Estate DW</Name>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>RealEstateDW</Id>
+            <Name>RealEstateDW</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAGLBPK74N9UOi8BGniwhEtAAAAAAaAAAAUgBlAGEAbABFAHMAdABhAHQAZQBEAFcAAAAQZgAAAAEAACAAAADsGg96Zx8DqXUAVrzox1z+Gt2HtvExv0lzkCT18wQZswAAAAAOgAAAAAIAACAAAADT59WMZsCwugpAAAUwd1NyUngWTn5zIjvqO3rSEErpahAAAAB15ugySzDm6lh5Hw30gWoZQAAAAElB5Llf3sYFZjuLUp13CsVXbMfAH3Bk/HUJODWgJrJUqL8iMI9QU+XJj8ZGR12NNy+abnX8ktTFsE3utwg8pCU=</Value>
+          </ConfigurationSetting>
+        </UserIDs>
+        <UserPasswords>
+          <ConfigurationSetting>
+            <Id>Real Estate DW</Id>
+            <Name>Real Estate DW</Name>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>RealEstateDW</Id>
+            <Name>RealEstateDW</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAGLBPK74N9UOi8BGniwhEtAAAAAAaAAAAUgBlAGEAbABFAHMAdABhAHQAZQBEAFcAAAAQZgAAAAEAACAAAABbDhY/A3MEetCK20WLTZTYT8aRUM2jjTBqHWMm3yYDHwAAAAAOgAAAAAIAACAAAADfDXRG4SAmKhiY7NSH/8hwROHloejTB/sz9zo3QH38UhAAAACx3YA3IiGOkflElKg3q0tvQAAAAPApVjhgzgMQMh07bD3rhpm4Fy7IyYPgZyS3qlN/ek2/u8O5fi/sebn8AiqBC7ResEwt1fyOZLEl2ray+1Hs1DM=</Value>
+          </ConfigurationSetting>
+        </UserPasswords>
+        <TargetServer>localhost</TargetServer>
+        <TargetDatabase>SSAS_HousePrice</TargetDatabase>
+        <StartObject>
+          <ObjectId></ObjectId>
+          <ObjectType>Current</ObjectType>
+        </StartObject>
+      </Options>
+    </Configuration>
+  </Configurations>
+</AnalysisServicesUserConfiguration>

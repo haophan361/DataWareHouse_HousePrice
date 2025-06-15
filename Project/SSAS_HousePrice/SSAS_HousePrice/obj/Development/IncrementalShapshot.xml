@@ -1,0 +1,201 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>SSAS_HousePrice</Database>
+    <Server>localhost</Server>
+    <ConnectionString>Data Source=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>Default</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>tpORXj6iCeXH2AXdNH5v376HlVM=28/5/2025 5:49:01 pm28/5/2025 5:49:01 pm</TimeStamp>
+        <ID>
+          <String>RealEstateDW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>8zlN16HYkgz0KzhV+oUAPFTjPMg=28/5/2025 5:49:23 pm28/5/2025 5:49:13 pm</TimeStamp>
+        <ID>
+          <String>Real Estate DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>aZXUjpDJ8HXSawk4UethMOL01Qg=28/5/2025 5:49:45 pm28/5/2025 5:49:34 pm</TimeStamp>
+        <ID>
+          <String>Dim Basement</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>2Bf5XDJsQbDN+k7YseCSKIYEQkY=28/5/2025 5:50:00 pm28/5/2025 5:50:00 pm</TimeStamp>
+        <ID>
+          <String>DimBsmtFinType</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>o4Uh9kTer5jweuUJQzEWw5UNOZg=28/5/2025 5:50:18 pm28/5/2025 5:50:18 pm</TimeStamp>
+        <ID>
+          <String>DimCondition</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>nE0BrFxeLK0tz+nMoMDNpXesbVs=28/5/2025 5:50:33 pm28/5/2025 5:50:33 pm</TimeStamp>
+        <ID>
+          <String>DimDate</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>/SoWbaRI8vO1ks5zFVYYJx9/lR8=28/5/2025 5:50:48 pm28/5/2025 5:50:48 pm</TimeStamp>
+        <ID>
+          <String>DimElectrical</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>/RCG8c/lqjMu7Xm+hvIxUq4y3cE=28/5/2025 5:51:04 pm28/5/2025 5:51:04 pm</TimeStamp>
+        <ID>
+          <String>DimExterior</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>AUOWO7JYH1M+5SN+0JlLk3qG2I8=28/5/2025 5:51:18 pm28/5/2025 5:51:18 pm</TimeStamp>
+        <ID>
+          <String>DimGarage</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>wmfN4rDoVl5JWMS1OtWg5Wu41Mk=28/5/2025 5:51:35 pm28/5/2025 5:51:35 pm</TimeStamp>
+        <ID>
+          <String>DimHouseStyle</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>0AIjT6ZJLESgTeDiIHbpiRaTIu8=28/5/2025 5:51:49 pm28/5/2025 5:51:49 pm</TimeStamp>
+        <ID>
+          <String>DimLandContour</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>YHfG73bFKJ0Ctbp2EVG38Rv+G6w=28/5/2025 5:52:03 pm28/5/2025 5:52:03 pm</TimeStamp>
+        <ID>
+          <String>DimLocation</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>I3mT5yFjrL1URvw98u87urwcuSs=28/5/2025 5:52:17 pm28/5/2025 5:52:17 pm</TimeStamp>
+        <ID>
+          <String>DimLot</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>ffMSxzedSQdlMOPaUWbTS272r68=28/5/2025 5:52:34 pm28/5/2025 5:52:34 pm</TimeStamp>
+        <ID>
+          <String>DimMSSubClass</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>4gxMGAwvm/mXcg/rQR4gm4BfRIY=28/5/2025 5:52:51 pm28/5/2025 5:52:51 pm</TimeStamp>
+        <ID>
+          <String>DimMSZoning</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>rhSOGiYOr/CRyFJPXzT2OR4l4QE=28/5/2025 5:53:08 pm28/5/2025 5:53:08 pm</TimeStamp>
+        <ID>
+          <String>DimNeighborhood</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>4TJO3Tw8fmy2Qkb8dTfc6zVDL5U=28/5/2025 5:53:28 pm28/5/2025 5:53:27 pm</TimeStamp>
+        <ID>
+          <String>DimProperty</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>ThVQ2z/hQVjt6febXWjIxF4B+hY=28/5/2025 5:53:41 pm28/5/2025 5:53:41 pm</TimeStamp>
+        <ID>
+          <String>Dim SaleCondition</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>nb+tH80aESK8tpwPb7RXFBWmux8=28/5/2025 5:54:07 pm28/5/2025 5:54:07 pmRYaaJu0+6kRJysmAYER8nk3pTXo=28/5/2025 5:54:07 pm28/5/2025 5:54:07 pm</TimeStamp>
+        <ID>
+          <String>FactBasement</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>k0TufFgQpZ6+yncpWHdI932MBjs=30/5/2025 10:52:45 pm28/5/2025 5:54:25 pm+rQ9M6jiSB/u1KjKDlchf/Feesc=30/5/2025 10:52:45 pm28/5/2025 5:54:25 pm</TimeStamp>
+        <ID>
+          <String>FactFloorArea</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>7nJCaRBsQhcYff5DweAB+OlJHxU=28/5/2025 5:54:41 pm28/5/2025 5:54:41 pm6F9X3uFwQaLHR0WIK+dQaXH/jDs=28/5/2025 5:54:41 pm28/5/2025 5:54:41 pm</TimeStamp>
+        <ID>
+          <String>FactGarage</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>99+pDTbqxDQzqZPd0HIxnvPIedI=30/5/2025 10:07:04 pm28/5/2025 5:55:14 pmA9YEMjKzi4xDy5HP0pC4v32J3FM=28/5/2025 7:53:39 pm28/5/2025 5:55:14 pm</TimeStamp>
+        <ID>
+          <String>FactSale</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>WmokY+IYnex+WIya8AT6p4NYtlQ=30/5/2025 11:01:31 pm30/5/2025 11:01:14 pmhIBKVi1NITc8e19/w7/AvcKOMhg=30/5/2025 11:01:14 pm30/5/2025 11:01:14 pm</TimeStamp>
+        <ID>
+          <String>RealEstateDW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>tuKgkPNnaacbMcXeikQxf71kqCs=30/5/2025 11:40:39 pm30/5/2025 11:40:39 pm0YRyERZvwWZtynatepbmX85gqtE=30/5/2025 11:40:39 pm30/5/2025 11:40:39 pm</TimeStamp>
+        <ID>
+          <String>RealEstateDW 1</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>6Yz/ZyKAZ6nzjEelcKEj2l235/g=28/5/2025 4:22:33 pm28/5/2025 4:22:33 pm</TimeStamp>
+      <ID>
+        <String>SSAS_HousePrice</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2025-05-30T16:41:29.216667Z</LastDeployed>
+</DeploymentSnapshot>

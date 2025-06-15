@@ -1,0 +1,343 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="bc0f1990-a434-489e-bae8-834ef0dd4fe4" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>RealEstateDW 1</ID>
+  <Name>RealEstateDW</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="28139589-90d1-4f0d-bcfb-e57b59b68555">
+      <ID>DimDate</ID>
+      <Name>DimDate</Name>
+      <DimensionID>DimDate</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="2e0b7981-af94-48e7-af09-a2e392815584">
+          <AttributeID>Date Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5b2a2072-a4b1-42e0-8364-39a03b8c2325">
+          <AttributeID>ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="567389de-fa76-4d70-a3c0-09e9469cd043">
+          <AttributeID>Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="36f2ecf4-495b-43df-b743-1581a90c05aa">
+          <AttributeID>Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="225ff277-c98f-4085-a2f8-2dbcb9a75be1">
+          <AttributeID>Quarter</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="36277362-8a28-4e2e-be67-348167e4ea80">
+      <ID>DimLocation</ID>
+      <Name>DimLocation</Name>
+      <DimensionID>DimLocation</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="5af30e4b-9bdb-4bf9-a35f-0462645bb5d1">
+          <AttributeID>Location Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="04ed7262-ddb1-413f-8a7e-c32b9b386139">
+          <AttributeID>ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9307170b-d4c6-4f1c-add0-0b4d2bf7fb40">
+          <AttributeID>Condition ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f4196bc4-7f19-4f11-b336-e0e20cd6242c">
+          <AttributeID>Condition</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5c16da53-4068-4ea2-9d47-0a3614fdf60d">
+          <AttributeID>Neighborhood ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="514c335b-5f2e-48a8-a799-94c9ca737a42">
+          <AttributeID>Neighborhood</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="908200df-da68-4083-bdaa-c336078dc1ae">
+          <AttributeID>MS Zoning ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="49172b93-650f-4c1d-b440-03301c46adb7">
+          <AttributeID>MS Zoning</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="58c91d4e-f5fd-4d51-8f91-80ef8f2ed3b8">
+      <ID>DimProperty</ID>
+      <Name>DimProperty</Name>
+      <DimensionID>DimProperty</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="aeabc8a3-7fd8-4d14-a621-110ea7bb7185">
+          <AttributeID>Property Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a40fb7bc-b658-46cf-a865-2cd8df4f5ccd">
+          <AttributeID>ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="23c7b697-1f43-4dda-ae82-6aa57d8b3ad1">
+          <AttributeID>Foundation</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="34a1f018-4738-447d-b50e-1e8208601414">
+          <AttributeID>Bldg Type</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="05bf5fc8-0f51-49be-804d-38d20c8b9759">
+          <AttributeID>Year Built</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="af213795-a4b3-48e8-b140-640e4e366e1e">
+          <AttributeID>Year Remod Add</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2c2dd241-434a-4826-9f5d-5ac8825ed394">
+          <AttributeID>Overall Qual</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="999a1d4d-4627-4099-a344-119ca4b52c65">
+          <AttributeID>Overall Cond</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4bcf43b3-0e82-4afa-80d1-cc6f50efec21">
+          <AttributeID>Tot Rms Abv Grd</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d2c20dbd-bacf-4605-8a4a-e0433126a670">
+          <AttributeID>Bedroom Abv Gr</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cfc71a2f-633a-4bb9-a327-62bade7e0f25">
+          <AttributeID>Kitchen Abv Gr</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d43d8f59-99d5-46b3-9aac-ce06b91f8fff">
+          <AttributeID>Kitchen Qual</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="00dd6e3d-7688-4eb5-bbc1-26ee5016551a">
+          <AttributeID>Fireplaces</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6e304ed2-caf7-4c6b-806f-e00d2ff12026">
+          <AttributeID>Fire Place Qu</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="fa74cda0-6839-4392-baab-332c27f62c39">
+          <AttributeID>Heating</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c569e20b-f991-4475-88ed-08b1d81051c3">
+          <AttributeID>Heating QC</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9f290408-4aa2-4e75-8e8d-33b32a7918c2">
+          <AttributeID>Central Air</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6526cede-13b6-48b8-82d8-f45c1fa0924b">
+          <AttributeID>Pool Area</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c6fbd920-4650-4247-9a27-542bcd49ec93">
+          <AttributeID>Functional</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="dcf00c03-b706-40fe-b36e-134ea37cbec6">
+          <AttributeID>Full Bath</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="62eac936-01d0-48f0-bb68-84613959c0d8">
+          <AttributeID>Half Bath</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a2e9e067-b69b-414f-b628-18d3345ea896">
+          <AttributeID>MS Sub Class ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8f0f1184-bf0b-4742-ba8b-090b29f640ba">
+          <AttributeID>MS Sub Class</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5be2433a-15c4-49b0-8ac0-2312a8a01569">
+          <AttributeID>Electrical ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6f0050e5-af07-4568-a163-912920bd6df3">
+          <AttributeID>Electrical</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cc3a6679-5dd1-4b77-bdeb-45383b5389f7">
+          <AttributeID>House Style ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d0ac2ed1-e9f1-4054-b192-2b7e67c9a436">
+          <AttributeID>House Style</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="c104ea8d-54fa-484b-befb-823687288d00">
+      <ID>Fact Room Area</ID>
+      <Name>Fact Room Area</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="9d2a3033-388b-4311-bc5f-6de354d3bcc3">
+          <ID>Half Bath</ID>
+          <Name>Half Bath</Name>
+          <Source dwd:design-time-name="fa1dcde1-9d55-4cb9-a6a4-5c88abfef95b">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="abb29810-096c-4a09-96e6-173133417f6b">
+              <TableID>dbo_Fact_RoomArea</TableID>
+              <ColumnID>HalfBath</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="cc003532-b567-48e6-9033-12fc9c36987f">
+          <ID>Full Bath</ID>
+          <Name>Full Bath</Name>
+          <Source dwd:design-time-name="fbf23d04-5b83-44a0-a2da-8f8a889c74d3">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="97bf515a-779c-4487-8d75-a1b6b62f5e10">
+              <TableID>dbo_Fact_RoomArea</TableID>
+              <ColumnID>FullBath</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="91523386-a08b-4844-b08e-c1ed03aa559d">
+          <ID>Bedroom Abv Gr</ID>
+          <Name>Bedroom Abv Gr</Name>
+          <Source dwd:design-time-name="ae201d5c-712b-46cc-88c9-a26aa0a77942">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="fc0d0093-1b57-460c-a93f-4443313b599c">
+              <TableID>dbo_Fact_RoomArea</TableID>
+              <ColumnID>BedroomAbvGr</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="797bc459-87e0-4742-a747-19da9305e09d">
+          <ID>Kitchen Abv Gr</ID>
+          <Name>Kitchen Abv Gr</Name>
+          <Source dwd:design-time-name="597d6cd3-6a27-4fa0-9d99-da32bde947ac">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b49eb791-5c7e-49a0-a675-f8f467a77bd7">
+              <TableID>dbo_Fact_RoomArea</TableID>
+              <ColumnID>KitchenAbvGr</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="d7bafe52-e36a-455e-ba52-b2c956a02efe">
+          <ID>Tot Rms Abv Grd</ID>
+          <Name>Tot Rms Abv Grd</Name>
+          <Source dwd:design-time-name="34b212f4-de20-4466-8c72-d5ccfbb8a23f">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="fcb2841a-69ed-4283-9021-dfe1f5e4405a">
+              <TableID>dbo_Fact_RoomArea</TableID>
+              <ColumnID>TotRmsAbvGrd</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="841f58d3-83c3-43a9-aa8f-1644c555ecee">
+          <ID>Fireplaces</ID>
+          <Name>Fireplaces</Name>
+          <Source dwd:design-time-name="5a4c2eb4-108d-41d1-8ad8-3b39617761d6">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="164cdb01-e9d2-4d13-a8b0-758d97d06a3f">
+              <TableID>dbo_Fact_RoomArea</TableID>
+              <ColumnID>Fireplaces</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="820e358d-97ce-4e90-91c2-ef4c5ac098b3">
+          <ID>Fact Room Area Count</ID>
+          <Name>Fact Room Area Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="feff7873-fa09-4977-9c25-7880dc362929">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="84fe54d4-467c-45e6-a75c-a0e348ef05a7">
+              <TableID>dbo_Fact_RoomArea</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="3a6d9179-8c0b-412e-97da-ced1b4e83c87">
+          <CubeDimensionID>DimDate</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="41aaeb23-507b-498b-ba1e-7ffff72b91b4">
+              <AttributeID>Date Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="122fde7a-738c-43e1-85fb-9b87c3d6cdf7">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4e7bbb9c-0491-4efd-a704-739843f0d34d">
+                    <TableID>dbo_Fact_RoomArea</TableID>
+                    <ColumnID>DateKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="2685c13b-af01-4878-a9bd-6a6512c007c3">
+          <CubeDimensionID>DimLocation</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d4584882-040c-4085-bb50-c0e02e6df92c">
+              <AttributeID>Location Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="8902a60d-eec1-4af6-9b08-1e64888bafa8">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="74739857-a181-4fd9-9354-81a66b69259a">
+                    <TableID>dbo_Fact_RoomArea</TableID>
+                    <ColumnID>LocationId</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="9066e2f9-35de-4975-9658-33d77307f95b">
+          <CubeDimensionID>DimProperty</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="359cf0b7-a171-4495-9762-c2e367241b7c">
+              <AttributeID>Property Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="6fbf8d15-40a9-426b-b7c7-d2e0e1fb6ab4">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="31d770fb-c26e-4982-be6c-68339e81d1d8">
+                    <TableID>dbo_Fact_RoomArea</TableID>
+                    <ColumnID>PropertyId</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="d7faaf8e-277e-4526-8d35-7ee2a9a1c168">
+    <DataSourceViewID>Real Estate DW</DataSourceViewID>
+  </Source>
+</Cube>

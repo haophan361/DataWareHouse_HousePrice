@@ -1,0 +1,263 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="c47e92c7-a694-4e16-9e85-1b5a7ba61e06" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>DimExterior</ID>
+  <Name>DimExterior</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="c2bcebd9-d36a-4a94-957e-b32f0a0237bb">
+    <DataSourceViewID>Real Estate DW</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="381f6aba-73a2-4a5b-b19b-05606c228da7">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="4a4dc1b7-dbb4-4db1-a616-de3ffca1fb32">
+      <ID>Exterior Id</ID>
+      <Name>Exterior Id</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="75f98063-0682-4c04-82f1-84ee29fd0fb7">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c4737589-bbbc-47b3-a0da-5ab575414192">
+            <TableID>dbo_Dim_Exterior</TableID>
+            <ColumnID>ExteriorId</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="60ca3fcc-e654-4549-a4f8-1b9eb0f32f83">
+          <AttributeID>ID</AttributeID>
+          <Name>ID_</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b3e4d3c0-0f2f-475a-a87b-32986f3c12dc">
+          <AttributeID>Roof Style</AttributeID>
+          <Name>Roof Style</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="fa09ee72-1fc1-4988-aab8-adc7a3f05c7b">
+          <AttributeID>Roof Matl</AttributeID>
+          <Name>Roof Matl</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f7110ac6-2d1e-4492-96e7-221c7a140add">
+          <AttributeID>Exterior1st</AttributeID>
+          <Name>Exterior1st</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e505d940-622b-4443-bab1-0e37f692800f">
+          <AttributeID>Exterior2nd</AttributeID>
+          <Name>Exterior2nd</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f6b3cb49-b24d-404d-80fe-076dd9dd390b">
+          <AttributeID>Mas Vnr Type</AttributeID>
+          <Name>Mas Vnr Type</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d4b4fd12-6525-4245-a618-00826b442d74">
+          <AttributeID>Mas Vnr Area</AttributeID>
+          <Name>Mas Vnr Area</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e30ec48e-93b1-437a-8604-a9fda620ec51">
+          <AttributeID>Exter Qual</AttributeID>
+          <Name>Exter Qual</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e0cc41b1-ff3e-4d85-9cf9-58f6f8f2e03a">
+          <AttributeID>Exter Cond</AttributeID>
+          <Name>Exter Cond</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="080275fb-985e-452f-8a58-649e341139b4">
+      <ID>ID</ID>
+      <Name>ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="60697ebe-62c8-4811-9e10-56594eae25e4">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bc8ab3cf-9818-4bbb-a5c4-ab079f3a2853">
+            <TableID>dbo_Dim_Exterior</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="767623ca-2551-406a-9297-6db7bed00f62">
+      <ID>Roof Style</ID>
+      <Name>Roof Style</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="04c23ba2-ac7d-4ede-b977-d1c5f99a4eb4">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1cdc4f9c-197c-4c00-b869-41100c6df19a">
+            <TableID>dbo_Dim_Exterior</TableID>
+            <ColumnID>RoofStyle</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c34004f6-4def-4b2d-a387-6e9b09c4a792">
+      <ID>Roof Matl</ID>
+      <Name>Roof Matl</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="78c6bb11-7257-453a-9d65-3865742c537d">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f1ca2227-3fc0-462b-95d0-2485a6092b30">
+            <TableID>dbo_Dim_Exterior</TableID>
+            <ColumnID>RoofMatl</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8c344131-3995-42c7-a176-6963163d19d4">
+      <ID>Exterior1st</ID>
+      <Name>Exterior1st</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e0d0df7a-c53a-465d-9611-975e7c194f20">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d2673240-17f9-4710-b116-e9933cfa24b4">
+            <TableID>dbo_Dim_Exterior</TableID>
+            <ColumnID>Exterior1st</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="60a6f290-5697-45de-8532-d5fdd347626c">
+      <ID>Exterior2nd</ID>
+      <Name>Exterior2nd</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="34be6ac9-c3f8-4990-9005-6de91ecb4f9b">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a907e963-0b58-4e2f-b919-f8fcdbd92b3a">
+            <TableID>dbo_Dim_Exterior</TableID>
+            <ColumnID>Exterior2nd</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6436472e-4c06-4664-8b88-1601c3025ec1">
+      <ID>Mas Vnr Type</ID>
+      <Name>Mas Vnr Type</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="36158413-c2f1-4383-a728-51f7d51fa045">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f9746238-842c-428e-9f04-e472b93856ad">
+            <TableID>dbo_Dim_Exterior</TableID>
+            <ColumnID>MasVnrType</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9dc7f03b-eded-49e5-9561-b174f39878ab">
+      <ID>Mas Vnr Area</ID>
+      <Name>Mas Vnr Area</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d0b13059-1663-423b-a1d1-2e1a683c0686">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="95ff94c8-4301-42b8-92c3-9d6acfca21e1">
+            <TableID>dbo_Dim_Exterior</TableID>
+            <ColumnID>MasVnrArea</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="85546669-e3b5-49d8-b875-a515c9b92c4b">
+      <ID>Exter Qual</ID>
+      <Name>Exter Qual</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="403d2862-4e2f-4570-8177-945871a912bd">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="11c18e66-03b9-4cec-a77d-7060d20f9588">
+            <TableID>dbo_Dim_Exterior</TableID>
+            <ColumnID>ExterQual</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="abd6c91b-c728-4b6a-ad2a-713377dca564">
+      <ID>Exter Cond</ID>
+      <Name>Exter Cond</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3e05728f-fd59-4289-99ca-74e77baa9dbc">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ca24232c-6c8f-4951-8320-81d60e8747ef">
+            <TableID>dbo_Dim_Exterior</TableID>
+            <ColumnID>ExterCond</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

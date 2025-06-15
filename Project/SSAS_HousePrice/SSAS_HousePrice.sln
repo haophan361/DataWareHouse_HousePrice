@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36121.58
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "SSAS_HousePrice", "SSAS_HousePrice\SSAS_HousePrice.dwproj", "{48D1E780-D078-5A50-4039-D70C8AC7159B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48D1E780-D078-5A50-4039-D70C8AC7159B}.Development|Default.ActiveCfg = Development
+		{48D1E780-D078-5A50-4039-D70C8AC7159B}.Development|Default.Build.0 = Development
+		{48D1E780-D078-5A50-4039-D70C8AC7159B}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {32F1F940-680C-4F39-A4AB-159DC54D6A58}
+	EndGlobalSection
+EndGlobal

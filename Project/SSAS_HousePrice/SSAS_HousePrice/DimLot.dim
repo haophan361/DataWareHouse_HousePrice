@@ -1,0 +1,267 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="8b3758fa-b1dc-4134-9f6c-45ab1b6b0539" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>DimLot</ID>
+  <Name>DimLot</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="d5a27422-a82f-433d-92e9-9128b23e9bd8">
+    <DataSourceViewID>Real Estate DW</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="2ba9f68a-87a0-4d01-b45c-b4026e013b85">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="773c6d84-0303-4941-a86c-0d9e4841c66b">
+      <ID>Lot Id</ID>
+      <Name>Lot Id</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9488f141-c119-4cc9-a7e5-122f41228375">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fc71697c-7142-4dc1-8f9c-e0e55beadf65">
+            <TableID>dbo_Dim_Lot</TableID>
+            <ColumnID>LotId</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="3564b99a-7b85-4c72-b557-7530a4f067ce">
+          <AttributeID>ID</AttributeID>
+          <Name>ID_</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4c77f75b-b807-4bb5-a3bc-baeef42e5a6a">
+          <AttributeID>Lot Frontage</AttributeID>
+          <Name>Lot Frontage</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0e332b87-2b16-47af-9d9c-0e98cda7ad7a">
+          <AttributeID>Lot Area</AttributeID>
+          <Name>Lot Area</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a8278ef1-0db9-484f-b965-ae1505e03b6f">
+          <AttributeID>Lot Shape</AttributeID>
+          <Name>Lot Shape</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0e9ccfc5-cac0-4f7c-b780-c106b77329b4">
+          <AttributeID>Utilities</AttributeID>
+          <Name>Utilities</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ce0b2ebb-a97b-46c6-b2f4-359ff5307014">
+          <AttributeID>Lot Config</AttributeID>
+          <Name>Lot Config</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="bda7a981-2fce-4b46-9918-fb62b9d0fe53">
+          <AttributeID>Land Slope</AttributeID>
+          <Name>Land Slope</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="45ed72d4-db24-4b9f-95bc-370fabeda14f">
+          <AttributeID>Land Contour ID</AttributeID>
+          <Name>Land Contour ID</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="92ff3dc9-7a8e-43ec-b9c3-101521358fe5">
+      <ID>ID</ID>
+      <Name>ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7dd14edc-7f85-4236-802d-3ffcc01965e3">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="92e06ffe-6c28-4188-b1d4-b48b5b93c16e">
+            <TableID>dbo_Dim_Lot</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4f17d527-ef8d-471f-9420-76554f58b55d">
+      <ID>Lot Frontage</ID>
+      <Name>Lot Frontage</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ade10660-a04d-4949-ad5e-10857fa99606">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="58600597-3c12-4ec7-929f-a0662a10b5c7">
+            <TableID>dbo_Dim_Lot</TableID>
+            <ColumnID>LotFrontage</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="58efd8a3-e104-49b1-912c-9c43c8657e95">
+      <ID>Lot Area</ID>
+      <Name>Lot Area</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d1f7f1ab-3cfb-42a4-a1d7-eda59319609d">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="16ddea7a-594a-45d6-a531-c1cbfafdec32">
+            <TableID>dbo_Dim_Lot</TableID>
+            <ColumnID>LotArea</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6554c94e-3f74-45e7-a32c-422f430fb312">
+      <ID>Lot Shape</ID>
+      <Name>Lot Shape</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2547eab1-ad84-47bd-b85e-45a8adc0c0f8">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="08882e51-88cd-45af-9506-32a243415377">
+            <TableID>dbo_Dim_Lot</TableID>
+            <ColumnID>LotShape</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="19de79a4-cc37-46e3-a1a4-b2b841b7a43a">
+      <ID>Utilities</ID>
+      <Name>Utilities</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="621632a8-12e2-4ce5-a225-2d8220bfa463">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="63101f19-23fc-4a84-aa39-6ac199da10f4">
+            <TableID>dbo_Dim_Lot</TableID>
+            <ColumnID>Utilities</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="24e91ac5-c2f3-41a0-934b-fea240939058">
+      <ID>Lot Config</ID>
+      <Name>Lot Config</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="86d4e0d8-8b3d-4c7c-840c-881d276188e8">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="54bf441a-978d-4790-99d3-fb2151264dbf">
+            <TableID>dbo_Dim_Lot</TableID>
+            <ColumnID>LotConfig</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="bbc10ac0-ad83-4194-b551-9a0647e1d363">
+      <ID>Land Slope</ID>
+      <Name>Land Slope</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2de45c27-20b1-446e-a5da-2ba99fe464c3">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9b87c5c1-88aa-44e7-9150-dd1b1aa09147">
+            <TableID>dbo_Dim_Lot</TableID>
+            <ColumnID>LandSlope</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="af08c042-e65d-4002-8f87-3fdf4e6f77ad">
+      <ID>Land Contour ID</ID>
+      <Name>Land Contour ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="deabe4a3-e602-4c78-8315-eca5cb42089b">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b6cd76d0-a62b-4e38-a2d9-d867622010a6">
+            <TableID>dbo_Dim_LandContour</TableID>
+            <ColumnID>LandContour_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="87b258b7-f255-4a6a-94c0-a4e02c4a91fc">
+          <AttributeID>Land Contour</AttributeID>
+          <Name>Land Contour</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="09cb03bc-edaa-4d4b-8a66-85fbafde51c4">
+      <ID>Land Contour</ID>
+      <Name>Land Contour</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="08b53ded-c304-4583-96a2-fb5bb1d2a71d">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3dffb4fd-cf13-4aca-be55-b28ac01fbd2c">
+            <TableID>dbo_Dim_LandContour</TableID>
+            <ColumnID>LandContour</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
